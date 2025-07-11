@@ -24,8 +24,8 @@
 
 from random import uniform
 
-team1 = [round(uniform(5, 10), 2) for i in range(20)]
-team2 = [round(uniform(5, 10), 2) for i in range(20)]
+team1 = [round(uniform(5, 10), 2) for _ in range(20)]
+team2 = [round(uniform(5, 10), 2) for _ in range(20)]
 
 winners = [team1[i] if team1[i] > team2[i] else team2[i] for i in range(len(team1))]
 
